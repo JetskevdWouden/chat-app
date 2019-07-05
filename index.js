@@ -25,7 +25,7 @@ const onStream = (req, res) => stream.init(req, res);
 
 // Initialize and define port
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Register middlewares
 app.use(cors());
