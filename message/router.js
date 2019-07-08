@@ -40,7 +40,7 @@ Message
                 .catch(error => next(error))
         })
     })
-    .catch(error => next(error))
+    .catch(console.error)
     
 
 module.exports = router;
