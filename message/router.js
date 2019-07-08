@@ -28,8 +28,8 @@ Message
                         .then(messages => {
                             console.log('messages test:', messages)
                             const json = JSON.stringify(messages)
-                            stream.updateInit(messages)
-                            stream.send(messages)
+                            stream.updateInit(json)
+                            stream.send(json)
                             return res
                                 .status(201)
                                 .send({
