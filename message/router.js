@@ -26,6 +26,7 @@ Message
                     Message
                         .findAll()
                         .then(messages => {
+                            console.log('messages test:', messages)
                             const json = JSON.stringify(messages)
                             stream.updateInit(messages)
                             stream.send(messages)
